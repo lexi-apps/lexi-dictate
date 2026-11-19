@@ -13,9 +13,9 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.4.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.5.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.4.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
+<sub>Run <code>LexiDictate-Setup-0.5.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
 
 [Overview](#overview) · [Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
 
@@ -43,6 +43,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 | **Curated model presets** | Lists vetted low-latency Live models (`gemini-3.5-transcribe-live`, `gemini-3.1-flash-live-preview`, `gemini-2.5-flash-native-audio-latest`, `gemini-3.8-live`) and Flash post-processing models (`gemini-3.1-flash-lite`, `gemini-3-flash-preview`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`) with speed and quality notes. |
 | **Multi-key 429 failover** | Add multiple Google AI Studio API keys in priority order. When one key hits a `429` quota limit, LexiDictate places it in escalating cooldown and switches to the next ready key, with transient `503` model fallback built in. |
 | **One-click shortcuts** | Bind single keys (including `Right Alt`, `F9`, `Caps Lock`), combinations (`Ctrl+Space`), or mouse side buttons (`Mouse 3/4/5`) by pressing them directly, with duplicate conflict detection and AltGr handling for Turkish layouts. |
+| **Game Mode auto-pause** | Automatically suspends shortcuts, the floating pop-up, and update notices in exclusive fullscreen, borderless fullscreen, and windowed games (via engine window classes, Steam/Epic/Riot/Xbox/GOG/EA/Ubisoft paths, and Windows GameConfigStore). Keys pass straight through with zero added latency, alongside a custom **Excluded Apps** picker and tray **Pause / Resume** toggle. |
 | **Clipboard-safe insertion** | Restores your previous clipboard contents after pasting, or inserts directly via Win32 Unicode `SendInput` without touching the clipboard. |
 | **Built-in updates and issue reports** | Checks GitHub Releases for new installers, verifies SHA-256 checksums, and includes a privacy-filtered bug report dialog that strips API keys and user paths before sending. |
 | **Local-first storage** | No telemetry, ads, or intermediary accounts. Configuration and API keys stay in `%APPDATA%\LexiDictate\config.json`. |
@@ -56,9 +57,9 @@ Audio and keys move directly between your machine and Google AI Studio using you
 <img src="assets/screenshots/api-pool.png" width="820" alt="LexiDictate API Key Pool and Model Selector">
 </div>
 
-| Shortcuts | Floating Pop-up States |
+| Shortcuts and Game Mode | Floating Pop-up States |
 |---|---|
-| <img src="assets/screenshots/shortcuts.png" alt="LexiDictate Shortcuts"> | <img src="assets/screenshots/popup-states.png" alt="LexiDictate Floating Pop-up States"> |
+| <img src="assets/screenshots/shortcuts.png" alt="LexiDictate Shortcuts and Game Mode"> | <img src="assets/screenshots/popup-states.png" alt="LexiDictate Floating Pop-up States"> |
 
 ### Updates and Issue Reporting
 
@@ -68,7 +69,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 
 ## Installation
 
-1. Download **`LexiDictate-Setup-0.4.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
+1. Download **`LexiDictate-Setup-0.5.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
 2. Run the installer. Because the binary is not code-signed yet, Windows SmartScreen may ask for confirmation: choose **More info -> Run anyway**.
 3. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey) and add it under **API Key Pool**.
 4. Configure your **Push-to-Talk** or **Toggle** binding under **Shortcuts**, focus any text field, and start speaking.
@@ -87,6 +88,12 @@ Yes. LexiDictate is freeware with no subscriptions, ads, or usage tiers.
 <summary><b>Why do I bring my own Google AI Studio API key?</b></summary>
 
 Using your own API key keeps latency low and avoids any third-party relay or account sign-up. You can also load several keys so dictation continues seamlessly if one account reaches its quota limit.
+</details>
+
+<details>
+<summary><b>How does Game Mode auto-pause work for fullscreen and windowed games?</b></summary>
+
+When **Auto-pause during games** is enabled under **Shortcuts**, LexiDictate automatically detects exclusive Direct3D fullscreen games, borderless fullscreen games, and windowed games (via engine window classes, Windows `GameConfigStore`, and Steam/Epic/Riot/Xbox/GOG/EA/Ubisoft library paths) and suspends hotkeys and the floating pop-up until you switch back. You can also add custom `.exe` executables under **Excluded Apps** (or pick from currently running windows) and manually toggle **Pause / Resume Dictation** anytime from the system tray menu. While paused, all keyboard keys and mouse side buttons pass straight through to the game without being intercepted.
 </details>
 
 <details>
