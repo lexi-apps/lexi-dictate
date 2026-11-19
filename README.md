@@ -1,24 +1,23 @@
 <div align="center">
 
-<img src="assets/lexidictate-icon.png" width="128" height="128" alt="LexiDictate">
+<img src="assets/lexidictate-icon.png" width="96" height="96" alt="LexiDictate">
 
 # LexiDictate
 
-**Lightweight, system-wide voice dictation for Windows powered by Gemini Live & Flash.**
+System-wide voice dictation for Windows powered by Gemini Live and Flash.
 
-[![Latest release](https://img.shields.io/github/v/release/lexi-apps/lexi-dictate?label=latest&color=2ea043)](https://github.com/lexi-apps/lexi-dictate/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/lexi-apps/lexi-dictate/total?color=0969da)](https://github.com/lexi-apps/lexi-dictate/releases)
-![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20(64--bit)-0078d4)
-![Price](https://img.shields.io/badge/price-free-8250df)
-[![Support on Patreon](https://img.shields.io/badge/Patreon-support-f96854?logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-tip-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
-[![Website](https://img.shields.io/badge/Website-lexi--apps.github.io-ff5a36)](https://lexi-apps.github.io/)
+[![Latest release](https://img.shields.io/github/v/release/lexi-apps/lexi-dictate?style=flat-square&label=release&color=2ea043)](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/lexi-apps/lexi-dictate/total?style=flat-square&color=0969da)](https://github.com/lexi-apps/lexi-dictate/releases)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-0078d4?style=flat-square)
+[![Website](https://img.shields.io/badge/website-lexi--apps.github.io-ff5a36?style=flat-square)](https://lexi-apps.github.io/)
+[![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
+[![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [⬇ Download the latest version](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.3.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.2.0.exe</code> from the latest release.</sub>
+<sub>Run <code>LexiDictate-Setup-0.3.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
 
-[Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
+[Overview](#overview) · [Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
 
 <br>
 
@@ -28,39 +27,51 @@
 
 ---
 
+## Overview
+
+LexiDictate lets you dictate into any Windows text field without switching windows. It watches text cursor focus across browsers and native desktop apps, streams partial speech live while you talk, cleans up filler words and self-corrections with Gemini Flash, and pastes the finished sentence back without clobbering your clipboard.
+
+Audio and keys move directly between your machine and Google AI Studio using your own API keys.
+
 ## Features
 
-| | |
+| Capability | Details |
 |---|---|
-| 🎙️ **Focus-aware floating mic pop-up** | Automatically appears near active text fields across browsers and desktop apps, hides on non-editable clicks, and never steals focus from what you are typing. |
-| ⚡ **Real-time live transcript preview** | Streams partial words onto the compact floating capsule as you speak via Gemini Live, then delivers crisp final text right after you stop. |
-| ✍️ **Smart sentence polishing** | Removes filler words, resolves inline self-corrections, fixes punctuation, and naturally preserves bilingual English technical terms mixed into speech (also supports Verbatim & Translate-to-English modes). |
-| 🧠 **Curated fast Gemini models** | Offers vetted Live (`gemini-3.5-transcribe-live`, `gemini-3.1-flash-live-preview`, `gemini-2.5-flash-native-audio-latest`, `gemini-3.8-live`) and Flash Polish (`gemini-3.1-flash-lite`, `gemini-3-flash-preview`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`) presets with speed & quality notes. |
-| 🔁 **Multi-key 429 automatic failover** | Add multiple Google AI Studio API keys in priority order — if one hits a rate limit (`429`), LexiDictate switches seamlessly to your next ready key, with transient `503` model fallback built in. |
-| ⌨️ **One-click keyboard & mouse shortcuts** | Bind single keys (like `Right Alt` or `F9`), combinations (`Ctrl+Space`), or mouse side buttons (`Mouse 4/5`) by simply pressing them — no manual key names to type. |
-| 🎨 **Matte Obsidian & Light Ivory UI** | Clean native Windows interface with 4 live accent presets (`Ivory`, `Emerald`, `Amber`, `Steel`), custom vocabulary hints, and local dictation history. |
-| 📋 **Clipboard-safe text insertion** | Restores your previous clipboard contents cleanly after pasting, or type directly via Unicode input without touching the clipboard. |
-| 🔒 **Local-first privacy** | Zero ads, zero telemetry, zero intermediary servers. API keys stay strictly in your local Windows profile (`%APPDATA%\LexiDictate\config.json`). |
-| 🌍 **Bilingual interface** | Full English and Turkish UI with instant live switching. |
+| **Focus-aware floating capsule** | Appears near active text inputs across browsers, editors, and messaging apps, hides when clicking non-editable areas, and never steals window focus. Includes a draggable fixed-position option. |
+| **Multi-sentence live preview** | Streams interim transcripts as you speak across multiple pauses and sentences via Gemini Live, falling back to full buffered audio if a stream cuts off early. |
+| **Sentence polishing and modes** | Strips filler words, resolves inline self-corrections, fixes punctuation, and keeps English technical terms intact inside Turkish speech. Supports **Smart Polish**, **Verbatim**, and **Translate to English**. |
+| **Curated model presets** | Lists vetted low-latency Live models (`gemini-3.5-transcribe-live`, `gemini-3.1-flash-live-preview`, `gemini-2.5-flash-native-audio-latest`, `gemini-3.8-live`) and Flash post-processing models (`gemini-3.1-flash-lite`, `gemini-3-flash-preview`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`) with speed and quality notes. |
+| **Multi-key 429 failover** | Add multiple Google AI Studio API keys in priority order. When one key hits a `429` quota limit, LexiDictate places it in escalating cooldown and switches to the next ready key, with transient `503` model fallback built in. |
+| **One-click shortcuts** | Bind single keys (including `Right Alt`, `F9`, `Caps Lock`), combinations (`Ctrl+Space`), or mouse side buttons (`Mouse 3/4/5`) by pressing them directly, with duplicate conflict detection and AltGr handling for Turkish layouts. |
+| **Clipboard-safe insertion** | Restores your previous clipboard contents after pasting, or inserts directly via Win32 Unicode `SendInput` without touching the clipboard. |
+| **Built-in updates and issue reports** | Checks GitHub Releases for new installers, verifies SHA-256 checksums, and includes a privacy-filtered bug report dialog that strips API keys and user paths before sending. |
+| **Local-first storage** | No telemetry, ads, or intermediary accounts. Configuration and API keys stay in `%APPDATA%\LexiDictate\config.json`. |
+| **Bilingual interface** | Full English and Turkish interface switching in real time. |
 
 ## Screenshots
 
-### API Key Pool & Curated Model Selector
+### API Key Pool and Model Presets
 
 <div align="center">
 <img src="assets/screenshots/api-pool.png" width="820" alt="LexiDictate API Key Pool and Model Selector">
 </div>
 
-| Interactive Shortcuts | Floating Pop-up States |
+| Shortcuts | Floating Pop-up States |
 |---|---|
 | <img src="assets/screenshots/shortcuts.png" alt="LexiDictate Shortcuts"> | <img src="assets/screenshots/popup-states.png" alt="LexiDictate Floating Pop-up States"> |
 
-## Installation & Quick Start
+### Updates and Issue Reporting
 
-1. Download **`LexiDictate-Setup-0.2.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
-2. Run the installer. Because the executable is not code-signed yet, Windows SmartScreen may show a warning: choose **More info → Run anyway**.
-3. Launch **LexiDictate** and create a free API key at [Google AI Studio](https://aistudio.google.com/apikey).
-4. Paste your key in **API Key Pool**, choose your preferred **Push-to-Talk** or **Toggle** shortcut in **Shortcuts**, click any text box, and start speaking.
+<div align="center">
+<img src="assets/screenshots/about.png" width="820" alt="LexiDictate About and Updates">
+</div>
+
+## Installation
+
+1. Download **`LexiDictate-Setup-0.3.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
+2. Run the installer. Because the binary is not code-signed yet, Windows SmartScreen may ask for confirmation: choose **More info -> Run anyway**.
+3. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey) and add it under **API Key Pool**.
+4. Configure your **Push-to-Talk** or **Toggle** binding under **Shortcuts**, focus any text field, and start speaking.
 
 **Requirements:** Windows 10 or Windows 11 (64-bit).
 
@@ -69,46 +80,48 @@
 <details>
 <summary><b>Is LexiDictate free?</b></summary>
 
-Yes. LexiDictate is completely free with no ads, subscriptions, or paid tiers.
+Yes. LexiDictate is freeware with no subscriptions, ads, or usage tiers.
 </details>
 
 <details>
-<summary><b>Why do I use my own Google AI Studio API key?</b></summary>
+<summary><b>Why do I bring my own Google AI Studio API key?</b></summary>
 
-Using your own API key keeps your audio and dictated text moving directly between your PC and Google's API with low latency and no third-party proxy, account sign-up, or usage cap imposed by us.
+Using your own API key keeps latency low and avoids any third-party relay or account sign-up. You can also load several keys so dictation continues seamlessly if one account reaches its quota limit.
 </details>
 
 <details>
-<summary><b>What happens if an API key hits a 429 rate limit?</b></summary>
+<summary><b>How do updates and bug reports work?</b></summary>
 
-You can add multiple Google AI Studio API keys in **API Key Pool**. Whenever a key hits a `429` quota limit, LexiDictate places it in cooldown and automatically switches to the next available key without interrupting your workflow.
+Under **About -> Updates**, LexiDictate checks this repository for new releases, verifies the downloaded installer against `SHA256SUMS.txt`, and launches the silent updater when you click **Restart & Install Update**. Under **Report an Issue**, it builds a local diagnostic summary with API keys and Windows user paths redacted, and lets you inspect the exact text before submitting.
 </details>
 
 <details>
-<summary><b>Does LexiDictate collect telemetry or upload my files?</b></summary>
+<summary><b>Does LexiDictate upload my dictation history or files?</b></summary>
 
-No. Audio is only captured while a dictation session is active, and your settings, API keys, and recent history remain strictly local on your machine.
+No. Audio is streamed only while a dictation session is active. Settings, custom vocabulary, keys, and recent history stay strictly local in `%APPDATA%\LexiDictate\config.json`.
 </details>
 
-## Support Lexi
+## Support
 
-Lexi apps are free and have no ads. If LexiDictate saves you time, you can support development on Patreon or Buy Me a Coffee:
+If LexiDictate saves you time, you can support ongoing development on Patreon or Buy Me a Coffee:
 
-[![Support Lexi on Patreon](https://img.shields.io/badge/Support%20Lexi%20on-Patreon-f96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
-[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
+[![Support Lexi on Patreon](https://img.shields.io/badge/Support%20Lexi%20on-Patreon-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
 ## More from Lexi Apps
 
 - **Website:** [lexi-apps.github.io](https://lexi-apps.github.io/)
-- **[Lexi Download Manager](https://github.com/lexi-apps/lexi-download-manager):** Free multi-part download manager for Windows with video site downloads, torrents, and a browser extension.
-- **[Lexi Ren'Py Translator](https://github.com/lexi-apps/lexi-renpy-translator):** Translates Ren'Py visual novels cleanly with glossary support.
+- **[Lexi Download Manager](https://github.com/lexi-apps/lexi-download-manager):** Multi-part Windows download manager with video site downloads, torrents, and browser integration.
+- **[Lexi Ren'Py Translator](https://github.com/lexi-apps/lexi-renpy-translator):** Translation tool for Ren'Py visual novels with glossary support.
 
 ## License
 
-LexiDictate is freeware and free to use. The application source code is proprietary and is not published in this distribution repository.
+LexiDictate is free to use (freeware). The application source code is proprietary and is not published in this distribution repository.
 
 ## Contact
 
 Bug reports and questions: **lexiapps@protonmail.com**
+
+---
 
 <div align="center"><sub>© Lexi Apps</sub></div>
