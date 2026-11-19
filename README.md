@@ -13,9 +13,9 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.3.1 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.4.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.3.1.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
+<sub>Run <code>LexiDictate-Setup-0.4.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
 
 [Overview](#overview) · [Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
 
@@ -39,7 +39,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 |---|---|
 | **Focus-aware floating capsule** | Appears near active text inputs across browsers, editors, and messaging apps, hides when clicking non-editable areas, and never steals window focus. Includes a draggable fixed-position option. |
 | **Multi-sentence live preview** | Streams interim transcripts as you speak across multiple pauses and sentences via Gemini Live, falling back to full buffered audio if a stream cuts off early. |
-| **Sentence polishing and modes** | Strips filler words, resolves inline self-corrections, fixes punctuation, and keeps English technical terms intact inside Turkish speech. Supports **Smart Polish**, **Verbatim**, and **Translate to English**. |
+| **Sentence polishing and multi-language translation** | Strips filler words, resolves inline self-corrections, fixes punctuation, and keeps English technical terms intact inside Turkish speech. Supports **Smart Polish**, **Verbatim**, and single-pass **Translation** into 14 target languages (English, Turkish, German, French, Spanish, Italian, Russian, Japanese, Korean, Simplified Chinese, Arabic, Portuguese, Dutch, Polish). |
 | **Curated model presets** | Lists vetted low-latency Live models (`gemini-3.5-transcribe-live`, `gemini-3.1-flash-live-preview`, `gemini-2.5-flash-native-audio-latest`, `gemini-3.8-live`) and Flash post-processing models (`gemini-3.1-flash-lite`, `gemini-3-flash-preview`, `gemini-3.5-flash-lite`, `gemini-3.5-flash`, `gemini-3.8-flash`) with speed and quality notes. |
 | **Multi-key 429 failover** | Add multiple Google AI Studio API keys in priority order. When one key hits a `429` quota limit, LexiDictate places it in escalating cooldown and switches to the next ready key, with transient `503` model fallback built in. |
 | **One-click shortcuts** | Bind single keys (including `Right Alt`, `F9`, `Caps Lock`), combinations (`Ctrl+Space`), or mouse side buttons (`Mouse 3/4/5`) by pressing them directly, with duplicate conflict detection and AltGr handling for Turkish layouts. |
@@ -68,7 +68,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 
 ## Installation
 
-1. Download **`LexiDictate-Setup-0.3.1.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
+1. Download **`LexiDictate-Setup-0.4.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
 2. Run the installer. Because the binary is not code-signed yet, Windows SmartScreen may ask for confirmation: choose **More info -> Run anyway**.
 3. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey) and add it under **API Key Pool**.
 4. Configure your **Push-to-Talk** or **Toggle** binding under **Shortcuts**, focus any text field, and start speaking.
