@@ -9,7 +9,7 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 [![Latest release](https://img.shields.io/github/v/release/lexi-apps/lexi-dictate?style=flat-square&label=release&color=2ea043)](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/lexi-apps/lexi-dictate/total?style=flat-square&color=0969da)](https://github.com/lexi-apps/lexi-dictate/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-0078d4?style=flat-square)
-[![Website](https://img.shields.io/badge/website-lexi--apps.github.io-ff5a36?style=flat-square)](https://lexi-apps.github.io/)
+[![Website](https://img.shields.io/badge/website-lexi--apps.pages.dev-ff5a36?style=flat-square)](https://lexi-apps.pages.dev/lexi-dictate/)
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
@@ -119,7 +119,7 @@ If LexiDictate saves you time, you can support ongoing development on Patreon or
 
 ## More from Lexi Apps
 
-- **Website:** [lexi-apps.github.io](https://lexi-apps.github.io/)
+- **Website:** [lexi-apps.pages.dev](https://lexi-apps.pages.dev/lexi-dictate/)
 - **[Lexi Download Manager](https://github.com/lexi-apps/lexi-download-manager):** Multi-part Windows download manager with video site downloads, torrents, and browser integration.
 - **[Lexi Ren'Py Translator](https://github.com/lexi-apps/lexi-renpy-translator):** Translation tool for Ren'Py visual novels with glossary support.
 
