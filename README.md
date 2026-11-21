@@ -14,9 +14,9 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.7.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.7.1 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.7.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
+<sub>Run <code>LexiDictate-Setup-0.7.1.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
 
 [Overview](#overview) · [Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
 
@@ -73,7 +73,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 
 ## Installation
 
-1. Download **`LexiDictate-Setup-0.7.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
+1. Download **`LexiDictate-Setup-0.7.1.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
 2. Run the installer. Because the binary is not code-signed yet, Windows SmartScreen may ask for confirmation: choose **More info -> Run anyway**.
 3. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey) and add it under **API Key Pool**.
 4. Configure your **Push-to-Talk** or **Toggle** binding under **Shortcuts**, focus any text field, and start speaking.
