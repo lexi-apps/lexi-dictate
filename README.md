@@ -14,9 +14,9 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.7.1 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.8.0 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.7.1.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
+<sub>Run <code>LexiDictate-Setup-0.8.0.exe</code> from the latest release. Windows 10 or Windows 11 (64-bit).</sub>
 
 [Overview](#overview) · [Features](#features) · [Screenshots](#screenshots) · [Installation](#installation) · [FAQ](#faq)
 
@@ -30,7 +30,7 @@ System-wide voice dictation for Windows powered by Gemini Live and Flash.
 
 ## Overview
 
-LexiDictate lets you dictate into any Windows text field without switching windows. It watches text cursor focus across browsers and native desktop apps, captures `40 ms` WASAPI audio chunks with an adaptive VAD trailing window, streams partial speech live via a cached Gemini Live connection, flushes trailing silence instantaneously on release so final words are never clipped, applies optional Flash polishing/translation or commits live text directly in under a second, executes spoken editing commands, and pastes cleanly without clobbering your clipboard.
+LexiDictate lets you dictate into any Windows text field without switching windows. It watches text cursor focus across browsers and native desktop apps, captures `40 ms` WASAPI audio chunks with an adaptive VAD trailing window, streams partial speech live via a cached Gemini Live connection, flushes trailing silence instantaneously on release so final words are never clipped, applies optional Flash polishing/translation or commits live text directly in under a second, executes spoken editing commands, and pastes cleanly without clobbering your clipboard. You can also highlight any short English or foreign-language snippet in apps like Discord or Chrome and translate it right where you read it using the small selection icon or `Alt + Q`.
 
 Audio and keys move directly between your machine and Google AI Studio using your own API keys.
 
@@ -39,6 +39,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 | Capability | Details |
 |---|---|
 | **Resizable compact floating capsule** | Sleek `85%` default (`40×40` idle circle / `32px` adaptive capsule) with a live-preview **Pop-up Size** slider (`65%–120%` in `5%` steps), compact mini-pill when live preview is off, right-click **Polish Mode** submenu (**Smart**, **Verbatim**, 14-language **Translate**), and a draggable fixed-position option. |
+| **Quick selection translation (Icon + `Alt + Q`)** | Highlight a message or snippet in Discord, browsers, or desktop apps to show a tiny non-activating translate icon near your cursor (zero API calls until clicked) or press **`Alt + Q`** directly to open the floating translation card. Includes a one-click **`TR ↔ EN`** flip, **Copy** button, `1500`-char limit, 20-item RAM cache, `Win+V`/image clipboard protection, and automatic skips in terminals and games. |
 | **Sub-second live dictation & optional full-audio verify** | Reuses cached Gemini Live client sessions, streams `40 ms` WASAPI audio chunks with an adaptive VAD trailing tail, and sends an instant trailing silence flush on stop to prevent dropped final syllables. Commits live transcripts fast (`~0.4–0.7s`) with automatic full-audio fallback, or enable **Full-audio verification** for complete audio re-analysis (`~1.2s`). |
 | **Voice dictation commands (TR & EN)** | Toggleable spoken commands (**`new line`** / **`yeni satır`**, **`new paragraph`** / **`yeni paragraf`**, **`undo dictation`** / **`son dikteyi sil`**, **`press enter`** / **`enter bas`**, **`select all`** / **`hepsini seç`**) protected by natural-prose false-trigger guards. |
 | **One-click retry recovery (RAM-only)** | Retains the last failed dictation audio transiently in RAM (`15 MB` cap, `10 min` TTL, never written to disk) with an inline **Retry** button on the error toast plus tray and pop-up right-click retry actions. |
@@ -73,7 +74,7 @@ Audio and keys move directly between your machine and Google AI Studio using you
 
 ## Installation
 
-1. Download **`LexiDictate-Setup-0.7.1.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
+1. Download **`LexiDictate-Setup-0.8.0.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest).
 2. Run the installer. Because the binary is not code-signed yet, Windows SmartScreen may ask for confirmation: choose **More info -> Run anyway**.
 3. Create an API key in [Google AI Studio](https://aistudio.google.com/apikey) and add it under **API Key Pool**.
 4. Configure your **Push-to-Talk** or **Toggle** binding under **Shortcuts**, focus any text field, and start speaking.
@@ -98,6 +99,12 @@ Using your own API key keeps latency low and avoids any third-party relay or acc
 <summary><b>How do voice dictation commands and Retry recovery work?</b></summary>
 
 When **Voice dictation commands** is enabled under **General**, spoken formatting and editing commands (`new line` / `yeni satır`, `new paragraph` / `yeni paragraf`, `undo dictation` / `son dikteyi sil`, `press enter` / `enter bas`, `select all` / `hepsini seç`) are executed automatically with natural-prose false-trigger guards so ordinary sentences remain untouched. If a temporary network or API timeout interrupts processing, LexiDictate holds only the last failed audio briefly in RAM (`15 MB` cap, `10 min` TTL, never saved to disk) so you can click **Retry** on the toast notification, tray menu, or pop-up context menu without re-speaking.
+</details>
+
+<details>
+<summary><b>How does Quick Selection Translation work without messing up my clipboard or quota?</b></summary>
+
+Selecting text shows a small floating icon (it does nothing and sends zero API requests unless you click it) or you can trigger translation right away with `Alt + Q` (customizable under **Shortcuts**). LexiDictate reads the selection via Windows UI Automation first without touching the clipboard at all, and only falls back to a quiet one-off copy in apps like Discord when needed — hiding it from `Win+V` clipboard history, restoring your previous copied text afterwards, skipping if you have a screenshot/file on your clipboard, and staying inactive in terminal windows and games. Requests are capped at `1500` characters and the last 20 translations stay cached in RAM.
 </details>
 
 <details>
