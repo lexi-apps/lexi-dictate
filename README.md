@@ -14,9 +14,9 @@
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.8.1 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.8.2 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.8.1.exe</code> · Windows 10 & 11 (64-bit) · 100% Freeware · Bring your own Gemini API key</sub>
+<sub>Run <code>LexiDictate-Setup-0.8.2.exe</code> · Windows 10 & 11 (64-bit) · 100% Freeware · Bring your own Gemini API key</sub>
 
 <br>
 
@@ -58,13 +58,13 @@
 - **Smart Polish, Commands & 14 Languages:** Strips fillers, resolves self-corrections, runs TR/EN voice commands (`new line`, `new paragraph`, `undo dictation`), or translates directly into 14 languages.
 - **Multi-Key `429` Failover & Retry:** Rotate multiple Gemini API keys automatically on rate limits, plus one-click RAM-only **Retry** (auto-clears after 10 min).
 - **Game Mode & Multi-Monitor Ready:** Auto-pauses in fullscreen/borderless/windowed games (whitelisting Snipping Tool, ShareX, Lightshot, OBS), supports mixed-DPI monitors (`HMONITOR`), and keeps Turkish `AltGr` (`@`, `€`) clash-free.
-- **Local-First & Verified:** Zero ads, accounts, or middleman servers — fail-closed SHA-256 silent updates and privacy-redacted bug reports.
+- **Local-First & Verified:** Zero ads, accounts, or middleman servers — API keys are encrypted at rest with Windows DPAPI (CurrentUser), plus fail-closed SHA-256 silent updates and privacy-redacted bug reports.
 
 ---
 
 ## Quick Start (30 Seconds)
 
-1. Download and run **`LexiDictate-Setup-0.8.1.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest) *(if SmartScreen prompts, choose **More info → Run anyway**)*.
+1. Download and run **`LexiDictate-Setup-0.8.2.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest) *(if SmartScreen prompts, choose **More info → Run anyway**)*.
 2. Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey) and paste it into **API Key Pool**.
 3. Click any text box, hold **`Right Alt`**, speak, and release.
 
@@ -113,7 +113,7 @@ No. Game Mode automatically suspends hotkeys and active dictation in games, and 
 <details>
 <summary><b>Where is my data stored?</b></summary>
 
-Strictly locally in `%APPDATA%\LexiDictate\config.json`. Audio is streamed directly to Google AI Studio only while dictating, and failed-session Retry audio lives solely in RAM for up to 10 minutes.
+Strictly locally in `%APPDATA%\LexiDictate\config.json`, with your API key values encrypted via Windows DPAPI (CurrentUser scope). Audio is streamed directly to Google AI Studio only while dictating, and failed-session Retry audio lives solely in RAM for up to 10 minutes.
 </details>
 
 ---
