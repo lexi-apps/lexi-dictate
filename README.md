@@ -9,20 +9,20 @@
 [![Latest release](https://img.shields.io/github/v/release/lexi-apps/lexi-dictate?style=flat-square&label=release&color=2ea043)](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/lexi-apps/lexi-dictate/total?style=flat-square&color=0969da)](https://github.com/lexi-apps/lexi-dictate/releases)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011%20x64-0078d4?style=flat-square)
-[![Website](https://img.shields.io/badge/website-lexi--apps.pages.dev-ff5a36?style=flat-square)](https://lexi-apps.pages.dev/lexi-dictate/)
+[![Website](https://img.shields.io/badge/website-lexiapps.dev-ff5a36?style=flat-square)](https://lexiapps.dev/lexi-dictate/)
 [![Discord](https://img.shields.io/badge/discord-community-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.gg/HN9eWThUn2)
 [![Patreon](https://img.shields.io/badge/patreon-support-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-tip-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-### [Download LexiDictate 0.8.6 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
+### [Download LexiDictate 0.8.7 for Windows](https://github.com/lexi-apps/lexi-dictate/releases/latest)
 
-<sub>Run <code>LexiDictate-Setup-0.8.6.exe</code> · Windows 10 & 11 (64-bit) · 100% Freeware · Bring your own Gemini API key</sub>
+<sub>Run <code>LexiDictate-Setup-0.8.7.exe</code> · Windows 10 & 11 (64-bit) · 100% Freeware · Bring your own Gemini API key</sub>
 
 <br>
 
 <img src="assets/cards/lexidictate-demo.gif" width="880" alt="LexiDictate — Interactive Voice Dictation & Alt + Q Selection Translate Demo">
 
-<sub>~14-second interactive highlight — live dictation &amp; Alt + Q selection translate · Click any feature card below for full 1600×900 detail · <a href="https://lexi-apps.pages.dev/lexi-dictate/">Watch full 31s 60fps showcase on website ↗</a></sub>
+<sub>~14-second interactive highlight — live dictation &amp; Alt + Q selection translate · Click any feature card below for full 1600×900 detail · <a href="https://lexiapps.dev/lexi-dictate/">Watch full 31s 60fps showcase on website ↗</a></sub>
 
 </div>
 
@@ -64,7 +64,7 @@
 
 ## Quick Start (30 Seconds)
 
-1. Download and run **`LexiDictate-Setup-0.8.6.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest) *(if SmartScreen prompts, choose **More info → Run anyway**)*.
+1. Download and run **`LexiDictate-Setup-0.8.7.exe`** from the [latest release](https://github.com/lexi-apps/lexi-dictate/releases/latest) *(if SmartScreen prompts, choose **More info → Run anyway**)*.
 2. Get a free API key from [Google AI Studio](https://aistudio.google.com/apikey) and paste it into **API Key Pool**.
 3. Click any text box, hold **`Right Alt`**, speak, and release.
 
@@ -123,9 +123,9 @@ Strictly locally in `%APPDATA%\LexiDictate\config.json`, with your API key value
 [![Support Lexi on Patreon](https://img.shields.io/badge/Support%20Lexi%20on-Patreon-f96854?style=flat-square&logo=patreon&logoColor=white)](https://www.patreon.com/cw/LexiApps)
 [![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a-Coffee-ffdd00?style=flat-square&logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/lexiapps)
 
-- **Website:** [lexi-apps.pages.dev/lexi-dictate](https://lexi-apps.pages.dev/lexi-dictate/)
+- **Website:** [lexiapps.dev/lexi-dictate](https://lexiapps.dev/lexi-dictate/)
 - **Discord:** [discord.gg/HN9eWThUn2](https://discord.gg/HN9eWThUn2)
-- **More Apps:** [Lexi Download Manager](https://github.com/lexi-apps/lexi-download-manager) · [Lexi Ren'Py Translator](https://github.com/lexi-apps/lexi-renpy-translator)
+- **More Apps:** [Lexi Download Manager](https://github.com/lexi-apps/lexi-download-manager) · [Lexi Game Translator](https://github.com/lexi-apps/lexi-renpy-translator)
 - **Contact:** `lexiapps@protonmail.com` · Freeware (proprietary source)
 
 ---
